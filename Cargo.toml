@@ -1,0 +1,17 @@
+[package]
+name = "be-rest-test-rs"
+version = "0.1.0"
+edition = "2021"
+authors = [
+  "Emil Sivervik <emil@sivervik.com>",
+]
+
+[dependencies]
+rocket = { version = "0.5.0-rc.3", features = ["json", "serde_json"] }
+serde = { version = "1.0.157", features = ["derive"] }
+futures = "0.3.27"
+serde_json = "1.0.94"
+bson = { version = "2.6.1", features = ["chrono-0_4"] }
+mongodb = "2.4.0"
+r2d2 = "0.8.10"
+chrono = { version = "0.4.24", features = ["clock"] }
